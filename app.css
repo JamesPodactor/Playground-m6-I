@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .row {
+    margin: 0 35px;
+  }
+
+  .container {
+    background-color: #39D482;
+    margin: 50px;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+  }
+.button {
+  align-items: center;
+  background-color: #008CBA;
+  font-size: 20px;
+  font-weight: 500;
+  height: 36px;
+  width: 250px;
+  justify-content: center;
+  
+}
