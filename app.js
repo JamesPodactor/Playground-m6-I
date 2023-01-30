@@ -69,11 +69,13 @@ var container = document.getElementById("product-list-container");
 var letMeCalculate = () => {
  var i = 0;
  while (i < products.length) {
-  if (products.units === 0) {
-      return document.getElementById("calculate").disabled = true;
+  if (products[i].units > 0) {
+      return document.getElementById("calculate").disabled = false;
     }
-    return document.getElementById("calculate").disabled = false;
+    i++;
   }
+
+  return document.getElementById("calculate").disabled = true;
   
 }
  
@@ -101,6 +103,7 @@ var showProducts = productList => {
     for (var product of productList) {
       createProduct(product);
     }
+    document.getElementById("calculate").disabled = letMeCalculate();
 }
 
 showProducts(products);
